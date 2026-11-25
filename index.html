@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Darwin Acevedo">
+    <title>Historias - Proyecto 24</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="contenedor">
+
+        <header>
+            <h1>Mis Historias</h1>
+            <p>Comparte tus momentos favoritos</p>
+        </header>
+
+
+        <!-- Sección de historias -->
+        <section class="seccion-historias">
+
+            <h2>Historias</h2>
+
+            <div class="lista-historias" id="listaHistorias">
+
+                <!-- Botón agregar -->
+                <button class="boton-agregar" id="btnAgregar">
+
+                    <span class="circulo-mas">+</span>
+
+                    <span>Agregar</span>
+
+                </button>
+
+            </div>
+
+            <!-- Seleccionar imagen -->
+            <input type="file" id="archivoHistoria" accept="image/*" hidden>
+
+            <p id="mensaje" aria-live="polite"></p>
+
+        </section>
+
+
+        <!-- Visor de historias -->
+        <section class="visor" id="visor" hidden>
+
+            <div class="visor-contenido">
+
+                <div class="visor-cabecera">
+
+                    <span id="contador"></span>
+
+                    <button id="cerrar">X</button>
+
+                </div>
+
+                <img id="imagenHistoria" src="" alt="Historia">
+
+                <div class="controles">
+
+                    <button id="anterior">❮</button>
+
+                    <button id="siguiente">❯</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
